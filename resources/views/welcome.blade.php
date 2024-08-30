@@ -24,7 +24,7 @@
                             Huckaby
                             </div>
                         </div>
-                        @if (Route::has('loginX'))
+                        @if (Route::has('login'))
                             <livewire:welcome.navigation />
                         @endif
                     </header>
