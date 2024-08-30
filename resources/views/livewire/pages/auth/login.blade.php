@@ -28,6 +28,12 @@ new #[Layout('layouts.guest')] class extends Component
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
+    <div class="text-center pb-4">
+        <a href="{{ route('github.login') }}" class="flex flex-row rounded border border-solid border-black/75 p-2 gap-2 items-center justify-center hover:bg-neutral-100">
+            <x-simpleicon-github class="w-6 h-6 inline" />GitHub
+        </a>
+    </div>
+
     <form wire:submit="login">
         <!-- Email Address -->
         <div>

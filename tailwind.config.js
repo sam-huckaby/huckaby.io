@@ -13,7 +13,8 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                paint: ['Finger Paint', ...defaultTheme.fontFamily.sans]
+                paint: ['Finger Paint', ...defaultTheme.fontFamily.sans],
+                inter: ['Inter', ...defaultTheme.fontFamily.sans],
             },
         },
     },
