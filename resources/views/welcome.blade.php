@@ -31,7 +31,7 @@
 
                     <main class="mt-6">
                         <div class="w-full flex flex-col justify-center items-center">
-                            <span class="text-6xl sm:text-[90px] text-black dark:text-neutral-100/75 font-inter">Find That</span>
+                            <span class="text-6xl text-black dark:text-neutral-100/75 font-inter">Find That</span>
                             <div class="p-8 sm:p-2 w-1/2 flex flex-col justify-center items-center">
                                     <div class="font-bold text-gray-500/25 font-paint text-8xl sm:text-[200px]">Nerd</div>
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-purple-500/75 font-paint rotate-3 -translate-x-2 -translate-y-2">Nerd</div>
@@ -42,13 +42,11 @@
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-blue-500/75 font-paint rotate-3 translate-x-2">Nerd</div>
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-black/70 font-paint">Nerd</div>
                             </div>
+                            <div class="pt-8">{{__('A new twist on "Where\'s Waldo?"')}}</div>
                         </div>
                     </main>
 
                 </div>
-                    <footer class="py-16 text-center text-sm text-black dark:text-white/70 font-inter">
-                       {{__('A new twist on "Where\'s Waldo?"')}}
-                    </footer>
             </div>
         </div>
     </body>
