@@ -8,7 +8,8 @@ new class extends Component {
 
     public function mount(): void
     {
-        $this->code = Tag::latest()->first()->code;
+        // There should only ever be one Tag that is "open" at a time
+        $this->code = Tag::where('user_id', null)->first()->code;
     }
 
 }; ?>
