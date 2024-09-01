@@ -32,7 +32,9 @@
                     <main class="mt-6 font-inter">
                         <div class="w-full flex flex-col justify-center items-center">
                             <span class="text-6xl text-black dark:text-neutral-100/75 font-inter">Find That</span>
-                            <div class="p-8 sm:p-2 w-1/2 flex flex-col justify-center items-center">
+                            <div class="p-8 sm:p-2 w-full flex flex-col justify-center items-center">
+                                <img src="nerd_logo.svg" />
+                                <!-- NOTE: This is the old way I did it, and it took forever, and I can't bring myself to delete it...
                                     <div class="font-bold text-gray-500/25 font-paint text-8xl sm:text-[200px]">Nerd</div>
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-purple-500/75 font-paint rotate-3 -translate-x-2 -translate-y-2">Nerd</div>
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-orange-500/75 font-paint -rotate-6 translate-x-2 translate-y-2">Nerd</div>
@@ -41,6 +43,7 @@
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-red-500/75 font-paint rotate-6">Nerd</div>
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-blue-500/75 font-paint rotate-3 translate-x-2">Nerd</div>
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-black/70 font-paint">Nerd</div>
+                                -->
                             </div>
                             <div class="py-8">{{__('A new twist on "Where\'s Waldo?"')}}</div>
                             <hr class="w-full py-8" />

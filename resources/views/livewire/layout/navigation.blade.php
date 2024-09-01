@@ -22,9 +22,9 @@ new class extends Component
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}" wire:navigate>
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                <div class="shrink-0 flex items-center h-full">
+                    <a href="{{ route('dashboard') }}" class="h-full" wire:navigate>
+                        <x-application-logo class="block h-full w-auto fill-current text-gray-800" />
                     </a>
                 </div>
 
@@ -89,6 +89,9 @@ new class extends Component
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                 {{ auth()->user()->nickname === 'sam-huckaby' ? __('Tag') : __('My Stats') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('leaderboard')" :active="request()->routeIs('leaderboard')" wire:navigate>
+                {{ __('Leaderboard') }}
             </x-responsive-nav-link>
         </div>
 
