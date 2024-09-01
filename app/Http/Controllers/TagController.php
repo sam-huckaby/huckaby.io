@@ -23,6 +23,8 @@ class TagController extends Controller
             ->whereNull('user_id')
             ->first();
 
+        dd($redeemCode);
+
         if (!$redeemCode) {
             // Handle the case where the code is not found or has already been redeemed
             return response('Hey! That code isn\'t real! Alerting the authorities!');
