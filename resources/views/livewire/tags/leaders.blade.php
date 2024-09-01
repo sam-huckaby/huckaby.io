@@ -17,7 +17,8 @@ new class extends Component {
 }; ?>
 
 <div class="w-full">
-    <h2 class="p-4">Top 10 Leaderboard</h2>
+    <h2 class="pt-4 font-paint text-4xl text-center">Top 10 <span class="text-orange-600">Taggers</span></h2>
+    <div class="text-center pt-1 pb-4 dark:text-gray-600">(a.k.a. Nerd Finder Extraordinaires)</div>
     <table class="w-full p-4">
         <thead>
             <tr class="border-b border-solid border-black">
