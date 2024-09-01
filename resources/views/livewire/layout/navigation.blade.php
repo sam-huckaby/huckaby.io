@@ -34,6 +34,12 @@ new class extends Component
                         {{ auth()->user()->nickname === 'sam-huckaby' ? __('Tag') : __('My Stats') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('leaderboard')" :active="request()->routeIs('leaderboard')" wire:navigate>
+                        {{ __('Leaderboard') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

@@ -10,6 +10,10 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
+Route::view('leaderboard', 'leaderboard')
+    ->middleware(['auth'])
+    ->name('leaderboard');
+
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
