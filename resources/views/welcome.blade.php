@@ -29,7 +29,7 @@
                         @endif
                     </header>
 
-                    <main class="mt-6">
+                    <main class="mt-6 font-inter">
                         <div class="w-full flex flex-col justify-center items-center">
                             <span class="text-6xl text-black dark:text-neutral-100/75 font-inter">Find That</span>
                             <div class="p-8 sm:p-2 w-1/2 flex flex-col justify-center items-center">
@@ -42,7 +42,29 @@
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-blue-500/75 font-paint rotate-3 translate-x-2">Nerd</div>
                                     <div class="absolute flex items-center justify-center text-8xl sm:text-[200px] font-bold text-black/70 font-paint">Nerd</div>
                             </div>
-                            <div class="pt-8">{{__('A new twist on "Where\'s Waldo?"')}}</div>
+                            <div class="py-8">{{__('A new twist on "Where\'s Waldo?"')}}</div>
+                            <hr class="w-full py-8" />
+                            <div class="p-2">
+                                <div class="pb-4 text-left">We all grew up playing hide-and-seek.</div>
+                                <div class="pb-4 text-center">Some of us grew up reading books about finding some guy named "Waldo".</div>
+                                <div class="pb-4 text-right">Now, it's <span class="italic">the future<span></div>
+                                and we've mostly lost our whimsy and desire to find people. It doesn't help that the internet has essentially made finding people very easy, at least all of the people that we're interested in finding. Most celebrities can be located with a quick search and the ability to travel - but what if we wanted to find someone unknown?
+                            </div>
+                            <img src="thought_loading.jpeg" class="rounded-full" alt="Picture of Sam Huckaby a.k.a. That Nerd" />
+                            <div class="font-paint text-4xl text-black dark:text-white">That Nerd</div>
+                            <div class="pb-4"><a class="font-inter underline underline-offset-4 hover:text-orange-600" href="https://x.com/samhuckaby">@samhuckaby</a></div>
+                            <div class="p-2">
+                                Enter: that nerd. As you may have guessed, that nerd is me. I've recently learned more about the Laravel web framework, and this app is a way for me to both explore it and to build a community around me. Admittedly, I'm not a particularly interesting guy, but that's what makes the game <span class="italic">fun</span>. I'm excited to meet you though, whoever you may be.
+                            </div>
+                            <div class="p-2 pb-12">
+                                <h1 class="text-4xl font-paint pb-4">How to play</h1>
+                                <ol class="list-decimal">
+                                    <li>Locate me IRL (in real life) - the hardest part</li>
+                                    <li>Approach me and start a conversation - the second hardest part</li>
+                                    <li>Ask to "tag the nerd" - the easiest but most awkward part</li>
+                                    <li>Repeat steps 1-3 at each new event</li>
+                                </ol>
+                            </div>
                         </div>
                     </main>
 
