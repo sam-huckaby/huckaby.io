@@ -55,7 +55,7 @@
                             </div>
                             <img src="thought_loading.jpeg" class="rounded-full" alt="Picture of Sam Huckaby a.k.a. That Nerd" />
                             <div class="font-paint text-4xl text-black dark:text-white">That Nerd</div>
-                            <div class="pb-4"><a class="font-inter underline underline-offset-4 hover:text-orange-600" href="https://x.com/samhuckaby">@samhuckaby</a></div>
+                            <div class="pb-4"><a class="font-inter underline underline-offset-4 hover:text-orange-600" target="_blank" href="https://x.com/samhuckaby">@samhuckaby</a></div>
                             <div class="p-2">
                                 Enter: that nerd. As you may have guessed, that nerd is me. I've recently learned more about the Laravel web framework, and this app is a way for me to both explore it and to build a community around me. Admittedly, I'm not a particularly interesting guy, but that's what makes the game <span class="italic">fun</span>. I'm excited to meet you though, whoever you may be.
                             </div>
