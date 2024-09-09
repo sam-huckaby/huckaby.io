@@ -33,7 +33,7 @@ class GitHubController extends Controller
 
             Auth::login($gitUser);
 
-            return redirect()->route('dashboard');
+            return redirect()->intended(route('dashboard'));
         } catch (\Exception $e) {
             dd($e->getMessage());
         }

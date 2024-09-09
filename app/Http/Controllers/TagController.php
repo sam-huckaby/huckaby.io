@@ -41,7 +41,6 @@ class TagController extends Controller
 
         return redirect()->route('dashboard');
 
-
         // Use the Tag Model here to populate the latest row with the currently logged in user and create a new code row
     }
 }
