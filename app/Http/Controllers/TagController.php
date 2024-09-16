@@ -26,7 +26,7 @@ class TagController extends Controller
 
         if (!$redeemCode) {
             // Handle the case where the code is not found or has already been redeemed
-            return response('Hey! That code isn\'t real! Alerting the authorities!');
+            return redirect()->route('dashboard')->with('redeem_success', false)->with('redeem_message', 'Hey! That code isn\'t real! Alerting the authorities!');
         }
 
         // We need to use updated_at because the tags are created as soon as the last one is tagged to a user
@@ -35,11 +35,12 @@ class TagController extends Controller
         $lastUserCode = Tag::where('user_id', $request->user()->id)->where('updated_at', '>=', Carbon::now()->subHours(18)->toDateTimeString())->first();
 
         if ($lastUserCode) {
-            return response("You can only tag me once every 18 hours!");
+            return redirect()->route('dashboard')->with('redeem_success', false)->with('redeem_message', "You can only tag me once every 18 hours!");
         }
 
         $userId = Auth::id();
 
+        // Use the Tag Model here to populate the latest row with the currently logged in user and create a new code row
         $redeemCode->update(['user_id' => $userId]);
 
         $nextCode = new Tag([
@@ -49,8 +50,7 @@ class TagController extends Controller
 
         $nextCode->save();
 
-        return redirect()->route('dashboard');
-
-        // Use the Tag Model here to populate the latest row with the currently logged in user and create a new code row
+        // Redirect the user to the dashboard with a message letting them know the tag was successful
+        return redirect()->route('dashboard')->with('redeem_success', true)->with('redeem_message', 'You have tagged The Nerd!');
     }
 }
